@@ -1,42 +1,67 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* setup del fondo */
+body {
+  background: #202020;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calendar {
+  /* Estilos generales del calendario */
+  
+  width: 1000px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation {
+  /* Estilos para la barra de navegación del calendario */
+  background-color: grey;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.days-grid {
+ 
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 1fr); 
+  
+}
+
+.box {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.day, .empty {
+  border: 3px solid #ccc; /* Borde de las celdas */
+   padding: 10px;  /*Espaciado interior*/
+ 
+}
+:hover.day{
+  border-color: aqua;
+}
+
+.row {
+  display: flex;
+  /* 
+  flex-direction: column; */
+}
+.calendar-container{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #494949;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 50px 0px;
+}
+.calendar-border{
+    border: 3px solid #ccc;
+    padding: 50px 50px;
+    background-color: #202020;
+    box-shadow: -5px 4px 41px 15px rgba(0,0,0,0.75);
+}
+.title-h1{
+    justify-content: center;
+    align-items: center;
 }
